@@ -1,3 +1,3 @@
 # Baked Potato Bot
  A discord bot based on the song "Thank You Baked Potato" by Matt Lucas
- ![alt text](https://raw.githubusercontent.com/BenRCook/Baked-Potato-Bot/master/Baked_potato_image.png)
+ ![alt text](https://lh3.googleusercontent.com/bKLaKjGWuOxoEsohZ-HZUgfMxG0axit4TsTKFMvTW3PaYdINUPsZkHFaubE43JirdgqYumumIQ=w200-h300)
