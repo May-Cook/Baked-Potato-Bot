@@ -1,6 +1,8 @@
 # bot.py
 import os
 import random
+import string
+import asyncio
 
 import discord
 
@@ -87,49 +89,41 @@ async def on_message(message):
         await message.channel.send(antitato.getResponse())
     elif message.content == "!contradictato":
         print(str(message.author) + ": !contradictato")
-        await message.channel.send(contradictato.getResponse())
+        await message.channel.send(contradictato.getResponse()) 
     elif message.content == "!spell":
         print(str(message.author) + ": !spell")
-        await message.channel.send("**B**")
-        await message.channel.send("**A**")      
-        await message.channel.send("**K**")
-        await message.channel.send("**E**")
-        await message.channel.send("**D**")
-        await message.channel.send("**P**") 
-        await message.channel.send("**O**")
-        await message.channel.send("**T**")
-        await message.channel.send("**A**")
-        await message.channel.send("**T**")
-        await message.channel.send("**O**")
+        await letter_by_letter(message.channel, "BAKEDPOTATO")
         await message.channel.send("Baked Potato")
     elif message.content == "!misspell":
         print(str(message.author) + ": !misspell")
-        Alphabet = ["**A**", "**B**", "**C**", "**D**", "**E**", "**F**", "**G**", "**H**", "**I**", "**J**", "**K**", "**L**", "**M**", "**N**", "**O**", "**P**", "**Q**", "**R**", "**S**", "**T**", "**U**", "**V**", "**W**", "**X**", "**Y**", "**Z**"]
-        lettersArray = ["**B**", "**A**", "**K**", "**E**", "**D**", "**P**", "**O**", "**T**", "**A**", "**T**", "**O**"]
+        alphabet = [f"**{letter}**" for letter in string.ascii_uppercase]
+        potato_letters = ["**B**", "**A**", "**K**", "**E**", "**D**", "**P**", "**O**", "**T**", "**A**", "**T**", "**O**"]
         count = 0
-        response = ""
-        while count != len(lettersArray):
-            rand = random.randint(0,5)
+        response = []
+        while count < len(potato_letters) :
+            rand = random.randint(0,10)
             if (rand == 4):
-                letter = random.choice(Alphabet)
-                response += letter[2]
-                await message.channel.send(letter)
+                letter = random.choice(alphabet)
+                response += [letter]
+                # await message.channel.send(potato_letters)
             elif rand == 3:
                 count += 1
             else:
-                letter = lettersArray[count]
-                response += letter[2]
-                await message.channel.send(letter)
+                letter = potato_letters[count]
+                response += [letter]
+                # await message.channel.send(potato_letters)
                 count += 1
-        # response = response.lower()
-        # firstLetter = response[0]
-        # finalResponse = ""
-        # for i in range(0, len(response)):
-        #     if (i == 0):
-        #         finalResponse += response[i]
-        #     else:
-        #         finalResponse += response[i].lower()
-        await message.channel.send(response.title())
+        await letter_by_letter(message.channel, response)
+        await message.channel.send("".join(response).replace("*", "").title())
+
+
+async def letter_by_letter(channel, content):
+    message = await channel.send(content[0])
+    for letter in content[1:]:
+        await asyncio.sleep(0.8)
+        await message.edit(content=message.content + " " + letter)
+    return message
+    
 
 
         
