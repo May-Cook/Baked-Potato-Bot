@@ -3,9 +3,7 @@ import os
 import random
 
 import discord
-# from dotenv import load_dotenv
 
-# load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
@@ -78,7 +76,7 @@ async def on_message(message):
         response += "!potato - Gives a conventional potato response\n"
         response += "!antitato - Gives a reverse potato response\n"
         response += "!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response\n"
-        response +="!spell - Reminds you how to spell \"baked potato\" \n"
+        response += "!spell - Reminds you how to spell \"baked potato\" \n"
         response += "!misspell - Reminds you how to spell somthing vaguely simmilar to \"baked potato \""
         await message.channel.send(response)
     elif message.content == "!potato":
@@ -92,7 +90,7 @@ async def on_message(message):
         await message.channel.send(contradictato.getResponse())
     elif message.content == "!spell":
         print(str(message.author) + ": !spell")
-        await message.channel.send("**B**")        
+        await message.channel.send("**B**")
         await message.channel.send("**A**")      
         await message.channel.send("**K**")
         await message.channel.send("**E**")
@@ -123,17 +121,17 @@ async def on_message(message):
                 response += letter[2]
                 await message.channel.send(letter)
                 count += 1
-        response = response.lower()
-        firstLetter = response[0]
-        finalResponse = ""
-        for i in range(0, len(response)):
-            if (i == 0):
-                finalResponse += response[i]
-            else:
-                finalResponse += response[i].lower()
-        await message.channel.send(response)
+        # response = response.lower()
+        # firstLetter = response[0]
+        # finalResponse = ""
+        # for i in range(0, len(response)):
+        #     if (i == 0):
+        #         finalResponse += response[i]
+        #     else:
+        #         finalResponse += response[i].lower()
+        await message.channel.send(response.title())
 
 
         
-
+print(TOKEN)
 client.run(TOKEN)
