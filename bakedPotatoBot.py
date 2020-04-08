@@ -23,7 +23,7 @@ class Potato:
         self.currentVerse = None
 
     def getResponse(self):
-        if (self.newVerse == True):
+        if self.newVerse == True:
             self.currentVerse = random.choice(self.adviceList)
             self.newVerse = False
             return self.currentVerse[0]
@@ -71,7 +71,7 @@ async def on_ready():
 async def on_message(message): 
     global potato, antitato
 
-    if (message.content == "!help"):
+    if message.content == "!help":
         print(str(message.author) + ": !help")
         response = ""
         response += "!help - Gives a list of options\n"
@@ -79,30 +79,61 @@ async def on_message(message):
         response += "!antitato - Gives a reverse potato response\n"
         response += "!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response\n"
         response +="!spell - Reminds you how to spell \"baked potato\" \n"
+        response += "!misspell - Reminds you how to spell somthing vaguely simmilar to \"baked potato \""
         await message.channel.send(response)
-    elif (message.content == "!potato"):
+    elif message.content == "!potato":
         print(str(message.author) + ": !potato")
         await message.channel.send(potato.getResponse())
-    elif (message.content == "!antitato"):
+    elif message.content == "!antitato":
         print(str(message.author) + ": !antitato")
         await message.channel.send(antitato.getResponse())
-    elif (message.content == "!contradictato"):
+    elif message.content == "!contradictato":
         print(str(message.author) + ": !contradictato")
         await message.channel.send(contradictato.getResponse())
-    elif (message.content == "!spell"):
+    elif message.content == "!spell":
         print(str(message.author) + ": !spell")
         await message.channel.send("**B**")        
         await message.channel.send("**A**")      
         await message.channel.send("**K**")
         await message.channel.send("**E**")
-        await message.channel.send("**D**\n")
+        await message.channel.send("**D**")
         await message.channel.send("**P**") 
         await message.channel.send("**O**")
         await message.channel.send("**T**")
         await message.channel.send("**A**")
         await message.channel.send("**T**")
         await message.channel.send("**O**")
-        await message.channel.send("Baked Potato") 
+        await message.channel.send("Baked Potato")
+    elif message.content == "!misspell":
+        print(str(message.author) + ": !misspell")
+        Alphabet = ["**A**", "**B**", "**C**", "**D**", "**E**", "**F**", "**G**", "**H**", "**I**", "**J**", "**K**", "**L**", "**M**", "**N**", "**O**", "**P**", "**Q**", "**R**", "**S**", "**T**", "**U**", "**V**", "**W**", "**X**", "**Y**", "**Z**"]
+        lettersArray = ["**B**", "**A**", "**K**", "**E**", "**D**", "**P**", "**O**", "**T**", "**A**", "**T**", "**O**"]
+        count = 0
+        response = ""
+        while count != len(lettersArray):
+            rand = random.randint(0,10)
+            if (rand == 4):
+                letter = random.choice(Alphabet)
+                response += letter[2]
+                await message.channel.send(letter)
+            elif rand == 3:
+                count += 1
+            else:
+                letter = lettersArray[count]
+                response += letter[2]
+                await message.channel.send(letter)
+                count += 1
+        response = response.lower()
+        firstLetter = response[0]
+        finalResponse = ""
+        for i in range(0, len(response)):
+            if (i == 0):
+                finalResponse += response[i]
+            else:
+                finalResponse += response[i].lower()
+        await message.channel.send(response)
+
+
         
 
 client.run("Njk3MTI3NDE3NjMzOTY0MjIz.Xozc1A.EdQL_bGry8JLApjOeFy6IKcLrwY")
