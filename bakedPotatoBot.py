@@ -111,7 +111,7 @@ async def on_message(message):
         count = 0
         response = ""
         while count != len(lettersArray):
-            rand = random.randint(0,10)
+            rand = random.randint(0,5)
             if (rand == 4):
                 letter = random.choice(Alphabet)
                 response += letter[2]
@@ -136,4 +136,4 @@ async def on_message(message):
 
         
 
-client.run("Njk3MTI3NDE3NjMzOTY0MjIz.Xozc1A.EdQL_bGry8JLApjOeFy6IKcLrwY")
+client.run(TOKEN)
