@@ -1,8 +1,0 @@
-{
-"name": "baked-potato-bot",
-"version": "1.0.0",
-"description": "Discord Bot based on the song Thank You Baked Potato by Matt Lucas",
-"main": "bot.js",
-"author": "Your Name",
-"dependencies": {}
-}

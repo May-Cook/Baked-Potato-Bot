@@ -56,7 +56,7 @@ class Contradictato(Potato):
             ["Allways eat what\'s on your plate.", "Never eat what\'s on your plate."]      
         ]
 
-
+    
 
 
 potato = Potato()
