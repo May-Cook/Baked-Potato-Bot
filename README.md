@@ -5,6 +5,6 @@
 
 
 
-Instructions:\n
-1: create an environment variable called "DISCORD_TOKEN", equal to your bot's token\n
-2: run bakedPotatoBot.py\n
+## Instructions:
+1. create an environment variable called "DISCORD_TOKEN", equal to your bot's token
+2. run bakedPotatoBot.py
