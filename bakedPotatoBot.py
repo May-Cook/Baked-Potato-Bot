@@ -127,5 +127,5 @@ async def letter_by_letter(channel, content):
 
 
         
-print(TOKEN)
+# print("Your token is: ", TOKEN)
 client.run(TOKEN)
