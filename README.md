@@ -3,7 +3,7 @@
  
  ![alt text](https://lh3.googleusercontent.com/bKLaKjGWuOxoEsohZ-HZUgfMxG0axit4TsTKFMvTW3PaYdINUPsZkHFaubE43JirdgqYumumIQ=w200-h300)
 
-
+:potato: :potato: :potato: :potato: :potato: :potato: :potato: :potato: 
 
 ## Instructions:
 1. create an environment variable called "DISCORD_TOKEN", equal to your bot's token
