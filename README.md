@@ -10,9 +10,9 @@
 2. Run bakedPotatoBot.py
 
 ## Commands:
-*!help - Gives a list of options
-*!potato - Gives a conventional potato response
-*!antitato - Gives a reverse potato response
-*!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response
-*!spell - Reminds you how to spell "baked potato" 
-*!misspell - Reminds you how to spell somthing vaguely simmilar to "baked potato "
+* !help - Gives a list of options
+* !potato - Gives a conventional potato response
+* !antitato - Gives a reverse potato response
+* !contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response
+* !spell - Reminds you how to spell "baked potato" 
+* !misspell - Reminds you how to spell somthing vaguely simmilar to "baked potato "
