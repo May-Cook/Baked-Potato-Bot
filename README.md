@@ -5,11 +5,25 @@
 
 :potato: :potato: :potato: :potato: :potato: :potato: :potato: :potato: 
 
-## Instructions:
-1. Create an environment variable called "DISCORD_TOKEN", equal to your bot's token
+## Instructions
+1. Create an environment variable called `DISCORD_TOKEN`, equal to your bot's token
 2. Run bakedPotatoBot.py
 
-## Commands:
+### Setting environment variables
+
+#### Windows
+1. search for 'enviroment' in the windows search bar and open `Edit the system environment variables`
+2. under the `Advnaced` tab, click the button labelled `Environment Variables...` in the bottom right of the `System Proprties` window 
+3. Click the button labelled `new...` in the middle of the `Enviroment Variables` window to add a new user variable
+4. Enter `DISCORD_TOKEN` in the box labelled `Variable name: ` and enter your bot's token in the box labelled `Variable value: `
+5. Click the button labelled `OK` at the bottom of the window
+
+#### Linux
+1. open .bashrc in your preferred edditor *(if you don't know how to do this you can use `sudo nano ~/.bashrc` to open it using nano)*
+2. add the line ```export DISCORD_TOKEN="yourToken"``` *(replacing `yourToken` with whatever your bot's token is)*
+3. save and exit the file *(if you are using nano you do this by pressing `CTRL-S` followed by `CTRL-X`)*
+
+## Commands
 * !help - Gives a list of options
 * !potato - Gives a conventional potato response
 * !antitato - Gives a reverse potato response
