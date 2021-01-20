@@ -80,6 +80,7 @@ async def on_message(message):
         response += "!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response\n"
         response += "!spell - Reminds you how to spell \"baked potato\" \n"
         response += "!misspell - Reminds you how to spell somthing vaguely simmilar to \"baked potato \""
+        response += "!link - Sends the link to the video"
         await message.channel.send(response)
     elif message.content == "!potato":
         print(str(message.author) + ": !potato")
@@ -115,6 +116,9 @@ async def on_message(message):
                 count += 1
         await letter_by_letter(message.channel, response)
         await message.channel.send("".join(response).replace("*", "").title())
+    elif message.content == "!link":
+        print(str(message.author) + ": !link")
+        await message.channel.send("https://www.youtube.com/watch?v=yYOkgCkxj9I")
 
 
 async def letter_by_letter(channel, content):
