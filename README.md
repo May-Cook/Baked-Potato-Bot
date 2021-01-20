@@ -16,14 +16,14 @@ Just follow this link: https://discordapp.com/oauth2/authorize?client_id=6971274
 
 #### Setting environment variables
 
-##### Windows
+###### Windows
 1. Search for 'enviroment' in the windows search bar and open `Edit the system environment variables`
 2. Under the `Advnaced` tab, click the button labelled `Environment Variables...` in the bottom right of the `System Proprties` window 
 3. Click the button labelled `new...` in the middle of the `Enviroment Variables` window to add a new user variable
 4. Enter `DISCORD_TOKEN` in the box labelled `Variable name: `  and enter your bot's token in the box labelled `Variable value: `
 5. Click the button labelled `OK` at the bottom of the window
 
-##### Linux
+###### Linux
 1. Open .bashrc in your preferred edditor *(if you don't know how to do this you can use `sudo nano ~/.bashrc` to open it using nano)*
 2. Add the line ```export DISCORD_TOKEN="yourToken"``` *(replacing `yourToken` with whatever your bot's token is)*
 3. Save and exit the file *(if you are using nano you do this by pressing `CTRL-S` followed by `CTRL-X`)*
