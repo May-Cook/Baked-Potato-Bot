@@ -36,6 +36,7 @@ Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127
 * !spell - Reminds you how to spell "baked potato" 
 * !misspell - Reminds you how to spell somthing vaguely simmilar to "baked potato "
 
-:potato: :potato: :potato: :potato: :potato: :potato: :potato: :potato: 
-
+## Links to the song
+Original: *(I will add this but I can't find it yet)*
+NHS Edition: https://www.youtube.com/watch?v=yYOkgCkxj9I
  ![alt text](https://lh3.googleusercontent.com/bKLaKjGWuOxoEsohZ-HZUgfMxG0axit4TsTKFMvTW3PaYdINUPsZkHFaubE43JirdgqYumumIQ=w200-h300)
