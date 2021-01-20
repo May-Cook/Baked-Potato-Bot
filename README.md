@@ -35,6 +35,8 @@ Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127
 * !contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response
 * !spell - Reminds you how to spell "baked potato" 
 * !misspell - Reminds you how to spell somthing vaguely simmilar to "baked potato "
+* !link - Sends the link to the video
+* !serioustato - Gives a very serious response
 
 ## Links to the song
 
