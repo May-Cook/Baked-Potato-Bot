@@ -68,7 +68,7 @@ class Serioustato(Potato):
             ["Do be good. Don\'t be bad.", "**I swear, you don't want to know what happens if you are bad!**"],
             ["Do be happy. Don\'t be sad.", "you don't want to know what happens if you don't cheer up"],
             ["Do be early. Don\'t be late.", "Or you may reach a terrible fate"],
-            ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]
+            ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]     
         ]
 
     
