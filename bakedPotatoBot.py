@@ -26,38 +26,17 @@ class Potato:
             self.newVerse = True
             return self.currentVerse[1]
 
-
-
-
-
-class Serioustato(Potato):
-    def __init__(self):
-        super().__init__()
-        self.adviceList = [
-            ["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
-            ["Only go to grocery stores.", "**I mean it, Only go to grocery stores!**"],
-            ["Keep some distance, Make some space.", "Or else I'll  punch you in the face"],
-            ["Remember not to touch your face.", "Or else I'll launch you into space"],
-            ["Do be good. Don\'t be bad.", "**I swear, you don't want to know what happens if you are bad!**"],
-            ["Do be happy. Don\'t be sad.", "you don't want to know what happens if you don't cheer up"],
-            ["Do be early. Don\'t be late.", "Or you may reach a terrible fate"],
-            ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]     
-        ]
-
-    
-
-
 potato = Potato([["Wash your hands and stay indoors.", "Only go to grocery stores."],
                 ["Keep some distance, Make some space.", "Remember not to touch your face."],
                 ["Do be good. Don\'t be bad.", "Do be happy. Don\'t be sad."],
                 ["Do be early. Don\'t be late.", "Allways eat what\'s on your plate."]])
 
-antitato = Antitato([["Leave your hands, Don\'t stay indoors.", "Go to many different stores."],
+antitato = Potato([["Leave your hands, Don\'t stay indoors.", "Go to many different stores."],
                 ["Keep no distance. Make no space.", "Remember you must touch your face."],
                 ["Don\'t be good, Do be bad.", "Don\'t be happy. Do be sad."],
                 ["Don\'t be early. Do be late.", "Never eat what\'s on your plate."]])
 
-contradictato = Contradictato(["Wash your hands and stay indoors.", "Leave your hands, Don\'t stay indoors."],
+contradictato = Potato(["Wash your hands and stay indoors.", "Leave your hands, Don\'t stay indoors."],
                 ["Only go to grocery stores.", "Go to many different stores."],
                 ["Keep some distance, Make some space.", "Keep no distance. Make no space"],
                 ["Remember not to touch your face.", "Remember you must touch your face."],
@@ -66,7 +45,7 @@ contradictato = Contradictato(["Wash your hands and stay indoors.", "Leave your 
                 ["Do be early. Don\'t be late.", "Don\'t be early. Do be late."],
                 ["Allways eat what\'s on your plate.", "Never eat what\'s on your plate."])
 
-serioustato = Serioustato(["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
+serioustato = Potato(["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
                 ["Only go to grocery stores.", "**I mean it, Only go to grocery stores!**"],
                 ["Keep some distance, Make some space.", "Or else I'll  punch you in the face"],
                 ["Remember not to touch your face.", "Or else I'll launch you into space"],
