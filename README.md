@@ -8,7 +8,7 @@
 ## Instructions
 
 ### Add this bot to your server
-Just follow this link: https://discordapp.com/oauth2/authorize?client_id=697127417633964223&scope=bot
+Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127417633964223&permissions=3072&scope=bot
 
 ### Hosting your own bot using this repo
 1. Create an environment variable called `DISCORD_TOKEN`, equal to your bot's token
