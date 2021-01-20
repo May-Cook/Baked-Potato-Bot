@@ -77,6 +77,7 @@ class Serioustato(Potato):
 potato = Potato()
 antitato = Antitato()
 contradictato = Contradictato()
+serioustato = Serioustato()
 
 @client.event # this is called a decorator
 async def on_ready():
@@ -137,7 +138,7 @@ async def on_message(message):
         await message.channel.send("https://www.youtube.com/watch?v=yYOkgCkxj9I")
     elif message.content == "!serioustato":
         print(str(message.author) + ": !serioustato")
-        await message.channel.send(Serioustato.getResponse())
+        await message.channel.send(serioustato.getResponse())
 
 
 async def letter_by_letter(channel, content):
