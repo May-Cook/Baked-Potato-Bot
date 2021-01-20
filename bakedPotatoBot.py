@@ -54,7 +54,7 @@ serioustato = Potato(["Wash your hands and stay indoors.", "**I mean it, Wash yo
                 ["Do be early. Don\'t be late.", "Or you may reach a terrible fate"],
                 ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]   )
 
-@client.event # this is called a decorator
+@client.event # note to self: this is called a decorator
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
