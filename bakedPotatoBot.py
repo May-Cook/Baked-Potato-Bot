@@ -56,6 +56,21 @@ class Contradictato(Potato):
             ["Allways eat what\'s on your plate.", "Never eat what\'s on your plate."]      
         ]
 
+
+class Serioustato(Potato):
+    def __init__(self):
+        super().__init__()
+        self.adviceList = [
+            ["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
+            ["Only go to grocery stores.", "**I mean it, Only go to grocery stores!**"],
+            ["Keep some distance, Make some space.", "Or else I'll  punch you in the face"],
+            ["Remember not to touch your face.", "Or else I'll launch you into space"],
+            ["Do be good. Don\'t be bad.", "**I swear, you don't want to know what happens if you are bad!**"],
+            ["Do be happy. Don\'t be sad.", "you don't want to know what happens if you don't cheer up"],
+            ["Do be early. Don\'t be late.", "Or you may reach a terrible fate"],
+            ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]
+        ]
+
     
 
 
@@ -80,7 +95,8 @@ async def on_message(message):
         response += "!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response\n"
         response += "!spell - Reminds you how to spell \"baked potato\" \n"
         response += "!misspell - Reminds you how to spell somthing vaguely simmilar to \"baked potato \"\n"
-        response += "!link - Sends the link to the video"
+        response += "!link - Sends the link to the video",
+        response += "!serioustato - Gives a very serious response"
         await message.channel.send(response)
     elif message.content == "!potato":
         print(str(message.author) + ": !potato")
@@ -119,6 +135,9 @@ async def on_message(message):
     elif message.content == "!link":
         print(str(message.author) + ": !link")
         await message.channel.send("https://www.youtube.com/watch?v=yYOkgCkxj9I")
+    elif message.content == "!serioustato":
+        print(str(message.author) + ": !serioustato")
+        await message.channel.send(potato.getResponse())
 
 
 async def letter_by_letter(channel, content):
