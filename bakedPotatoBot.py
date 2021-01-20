@@ -58,11 +58,8 @@ serioustato = Potato([["Wash your hands and stay indoors.", "**I mean it, Wash y
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-@client.event
-async def on_message(message): 
-    global potato, antitato
 
-    if message.content == "!help":
+async def help(message):
         print(str(message.author) + ": !help")
         response = ""
         response += "!help - Gives a list of options\n"
@@ -74,6 +71,15 @@ async def on_message(message):
         response += "!link - Sends the link to the video\n"
         response += "!serioustato - Gives a very serious response"
         await message.channel.send(response)
+
+
+
+@client.event
+async def on_message(message): 
+    global potato, antitato
+
+    if message.content == "!help":
+        await help(message)
     elif message.content == "!potato":
         print(str(message.author) + ": !potato")
         await message.channel.send(potato.getResponse())
