@@ -1,1 +1,1 @@
-worker: python startup.py
+worker: python bakedPotatoBot.py
