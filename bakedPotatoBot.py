@@ -36,23 +36,23 @@ antitato = Potato([["Leave your hands, Don\'t stay indoors.", "Go to many differ
                 ["Don\'t be good, Do be bad.", "Don\'t be happy. Do be sad."],
                 ["Don\'t be early. Do be late.", "Never eat what\'s on your plate."]])
 
-contradictato = Potato(["Wash your hands and stay indoors.", "Leave your hands, Don\'t stay indoors."],
+contradictato = Potato([["Wash your hands and stay indoors.", "Leave your hands, Don\'t stay indoors."],
                 ["Only go to grocery stores.", "Go to many different stores."],
                 ["Keep some distance, Make some space.", "Keep no distance. Make no space"],
                 ["Remember not to touch your face.", "Remember you must touch your face."],
                 ["Do be good. Don\'t be bad.", "Don\'t be good, Do be bad."],
                 ["Do be happy. Don\'t be sad.", "Don\'t be happy. Do be sad."],
                 ["Do be early. Don\'t be late.", "Don\'t be early. Do be late."],
-                ["Allways eat what\'s on your plate.", "Never eat what\'s on your plate."])
+                ["Allways eat what\'s on your plate.", "Never eat what\'s on your plate."]])
 
-serioustato = Potato(["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
+serioustato = Potato([["Wash your hands and stay indoors.", "**I mean it, Wash your hands and stay indoors!**"],
                 ["Only go to grocery stores.", "**I mean it, Only go to grocery stores!**"],
                 ["Keep some distance, Make some space.", "Or else I'll  punch you in the face"],
                 ["Remember not to touch your face.", "Or else I'll launch you into space"],
                 ["Do be good. Don\'t be bad.", "**I swear, you don't want to know what happens if you are bad!**"],
                 ["Do be happy. Don\'t be sad.", "you don't want to know what happens if you don't cheer up"],
                 ["Do be early. Don\'t be late.", "Or you may reach a terrible fate"],
-                ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]   )
+                ["Allways eat what\'s on your plate.", "**Or I'll force feed you that food you hate!**"]]   )
 
 @client.event # note to self: this is called a decorator
 async def on_ready():
