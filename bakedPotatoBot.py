@@ -137,7 +137,7 @@ async def on_message(message):
         await message.channel.send("https://www.youtube.com/watch?v=yYOkgCkxj9I")
     elif message.content == "!serioustato":
         print(str(message.author) + ": !serioustato")
-        await message.channel.send(potato.getResponse())
+        await message.channel.send(Serioustato.getResponse())
 
 
 async def letter_by_letter(channel, content):
