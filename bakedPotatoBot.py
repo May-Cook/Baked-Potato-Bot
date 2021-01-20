@@ -60,6 +60,7 @@ async def on_ready():
 
 
 async def help(message):
+    if str(message.author) != "Baked Potato Test#9579":
         print(str(message.author) + ": !help")
         response = ""
         response += "!help - Gives a list of options\n"
@@ -78,9 +79,16 @@ async def help(message):
 async def on_message(message): 
     global potato, antitato
 
-    if message.content == "!help":
-        await help(message)
-    elif message.content == "!potato":
+    potato_dictionary = {
+        "!help" : await help(message)
+    }
+    
+    if message.content in potato_dictionary:
+        await potato_dictionary[message.content]
+
+    # if message.content == "!help":
+    #     await potato_dictionary["!help"]
+    if message.content == "!potato":
         print(str(message.author) + ": !potato")
         await message.channel.send(potato.getResponse())
     elif message.content == "!antitato":
@@ -130,7 +138,4 @@ async def letter_by_letter(channel, content):
     return message
     
 
-
-        
-# print("Your token is: ", TOKEN)
 client.run(TOKEN)
