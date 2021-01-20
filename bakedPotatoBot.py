@@ -94,7 +94,7 @@ async def on_message(message):
         response += "!antitato - Gives a reverse potato response\n"
         response += "!contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response\n"
         response += "!spell - Reminds you how to spell \"baked potato\" \n"
-        response += "!misspell - Reminds you how to spell somthing vaguely simmilar to \"baked potato \"\n"
+        response += "!misspell - Reminds you how to spell something vaguely simmilar to \"baked potato \"\n"
         response += "!link - Sends the link to the video\n"
         response += "!serioustato - Gives a very serious response"
         await message.channel.send(response)
