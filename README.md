@@ -38,6 +38,11 @@ Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127
 * !link - Sends the link to the video
 * !serioustato - Gives a very serious potato response
 
+## Requirements
+* Python3
+* The `Discord.py` python module
+
+
 ## Links to the song
 
 Original: *(I will add this but I can't find it yet)*
