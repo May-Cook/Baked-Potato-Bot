@@ -5,7 +5,7 @@ import string
 import asyncio
 import discord
 
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv('DISCORD_TOKEN') # get the the bot's token from the corresponding environemnt variable
 
 intents = discord.Intents.default() # initialise intents as having all but presences, members and message_content
 intents.message_content = True # enable the message_content intent
@@ -129,4 +129,4 @@ async def letter_by_letter(channel, content):
 
         
 # print("Your token is: ", TOKEN)
-client.run(TOKEN)
+client.run(TOKEN) # start the bot
