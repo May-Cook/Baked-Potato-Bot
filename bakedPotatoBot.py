@@ -3,12 +3,14 @@ import os
 import random
 import string
 import asyncio
-
 import discord
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-client = discord.Client()
+intents = discord.Intents.default() # initialise intents as having all but presences, members and message_content
+intents.message_content = True # enable the message_content intent
+
+client = discord.Client(intents=intents) # initialise the class representing the connection to discord
 
 
 class Potato:
