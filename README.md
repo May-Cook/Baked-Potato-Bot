@@ -25,6 +25,7 @@ Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127
 
 ###### Linux
 type `DISCORD_TOKEN = "yourToken"` into the console *(replcacing `yourToken` with your bot's token)*
+
 if this does not work, you can try:
 1. Open .bashrc in your preferred edditor *(if you don't know how to do this you can use `sudo nano ~/.bashrc` to open it using nano)*
 2. Add the line ```export DISCORD_TOKEN="yourToken"``` *(replacing `yourToken` with whatever your bot's token is)*
