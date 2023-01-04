@@ -87,7 +87,7 @@ async def on_message(message):
         await message.channel.send(contradictato.getResponse()) 
     elif message.content == "!spell":
         print(str(message.author) + ": !spell")
-        await letter_by_letter(message.channel, "BAKEDPOTATO")
+        await letter_by_letter(message.channel, ["**B**", "**A**", "**K**", "**E**", "**D**", "**P**", "**O**", "**T**", "**A**", "**T**", "**O**"])
         await message.channel.send("Baked Potato")
     elif message.content == "!misspell":
         print(str(message.author) + ": !misspell")
