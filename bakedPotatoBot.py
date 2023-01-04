@@ -118,11 +118,11 @@ async def on_message(message):
         await message.channel.send(serioustato.getResponse())
 
 
-async def letter_by_letter(channel, content):
-    message = await channel.send(content[0])
+async def letter_by_letter(channel, content): # spells out the string in content by editing a sent message
+    message = await channel.send(content[0]) # send a message containing the first letter
     for letter in content[1:]:
         await asyncio.sleep(0.8)
-        await message.edit(content=message.content + " " + letter)
+        message = await message.edit(content=message.content + " " + letter) # edit the message to include the next letter
     return message
     
 
