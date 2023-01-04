@@ -97,16 +97,12 @@ async def on_message(message):
         response = []
         while count < len(potato_letters) :
             rand = random.randint(0,10)
-            if (rand == 4):
-                letter = random.choice(alphabet)
-                response += [letter]
-                # await message.channel.send(potato_letters)
-            elif rand == 3:
+            if (rand == 4): # add a random letter before the one pointed to by count
+                response += [random.choice(alphabet)]
+            elif rand == 3: # skip the letter pointed to by count
                 count += 1
-            else:
-                letter = potato_letters[count]
-                response += [letter]
-                # await message.channel.send(potato_letters)
+            else: # add the correct letter to the word
+                response += [potato_letters[count]]
                 count += 1
         await letter_by_letter(message.channel, response)
         await message.channel.send("".join(response).replace("*", "").title())
