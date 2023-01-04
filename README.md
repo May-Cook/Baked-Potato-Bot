@@ -24,7 +24,7 @@ Just follow this link: https://discord.com/api/oauth2/authorize?client_id=697127
 5. Click the button labelled `OK` at the bottom of the window
 
 ###### Linux
-type `DISCORD_TOKEN = "yourToken"` into the console *(replcacing `yourToken` with your bot's token)*
+Type `DISCORD_TOKEN = "yourToken"` into the console *(replcacing `yourToken` with your bot's token)*
 
 if this does not work, you can try:
 1. Open .bashrc in your preferred edditor *(if you don't know how to do this you can use `sudo nano ~/.bashrc` to open it using nano)*
