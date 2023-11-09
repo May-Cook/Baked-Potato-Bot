@@ -48,7 +48,7 @@ if this does not work, you can try:
 
 ## Links to the song
 
-Original: *(I will add this but I can't find it yet)*
+Original: https://www.youtube.com/watch?v=bPsY_nhTtxg
 
 NHS Edition: https://www.youtube.com/watch?v=yYOkgCkxj9I
 
