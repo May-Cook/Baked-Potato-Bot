@@ -52,4 +52,4 @@ Original: https://www.youtube.com/watch?v=bPsY_nhTtxg
 
 NHS Edition: https://www.youtube.com/watch?v=yYOkgCkxj9I
 
- ![alt text](https://lh3.googleusercontent.com/bKLaKjGWuOxoEsohZ-HZUgfMxG0axit4TsTKFMvTW3PaYdINUPsZkHFaubE43JirdgqYumumIQ=w200-h300)
+ ![An image of a cartoon potato next to Matt Lucas. Above them are the words "Thank you baked potato"](https://celebmix.com/wp-content/uploads/2020/04/BakedPotato.jpg)
