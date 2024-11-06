@@ -14,7 +14,7 @@ client = discord.Client(intents=intents) # initialise the class representing the
 
 
 class Potato:
-    def __init__(self, adviceList):
+    def __init__(self, adviceList: list[str]) -> None:
         self.adviceList = adviceList
         self.newVerse = True
         self.currentVerse = None
@@ -130,7 +130,7 @@ async def letter_by_letter(channel, content): # spells out the string in content
         message = await message.edit(content=message.content + " " + letter) # edit the message to include the next letter
     return message
 
-def generate_letters(phrase): # converts a string to an array of bold uppercase 1 character strings 
+def generate_letters(phrase: string) -> list[str]: # converts a string to an array of bold uppercase 1 character strings 
     letters = []
     for letter in phrase:
         letters.append("**" + letter.upper() + "**")
