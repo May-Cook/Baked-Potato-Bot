@@ -74,7 +74,8 @@ async def on_message(message):
         response += "`!spell` - Reminds you how to spell \"baked potato\" \n"
         response += "`!misspell` - Reminds you how to spell something vaguely simmilar to \"baked potato \"\n"
         response += "`!link` - Sends the link to the video\n"
-        response += "`!serioustato` - Gives a very serious response"
+        response += "`!serioustato` - Gives a very serious response\n"
+        response += "`!cookedtuber` - Chooses a cooking method and a tuber and reminds you how to spell it"
         await message.channel.send(response)
     elif message.content == "!potato":
         print(str(message.author) + ": !potato")
@@ -112,6 +113,14 @@ async def on_message(message):
     elif message.content == "!serioustato":
         print(str(message.author) + ": !serioustato")
         await message.channel.send(serioustato.getResponse())
+    elif message.content == "!cookedtuber":
+        print(str(message.author) + ": !cookedtuber")
+
+        cooking_method = random.choice(["Fried", "Baked", "Microwaved", "Deepfryed", "Blended", "Diced", "Steamed", "Boiled", "Poached", "Dried"])
+        tuber = random.choice(["Potato", "Tapioca", "Yam", "Ginger", "Tumeric", "Taro", "Cassava"])
+        response = generate_letters(cooking_method + tuber)
+        await letter_by_letter(message.channel, response)
+        await message.channel.send(cooking_method + " " + tuber + "!")
 
 
 async def letter_by_letter(channel, content): # spells out the string in content by editing a sent message
@@ -120,6 +129,12 @@ async def letter_by_letter(channel, content): # spells out the string in content
         await asyncio.sleep(0.8)
         message = await message.edit(content=message.content + " " + letter) # edit the message to include the next letter
     return message
+
+def generate_letters(phrase): # converts a string to an array of bold uppercase 1 character strings 
+    letters = []
+    for letter in phrase:
+        letters.append("**" + letter.upper() + "**")
+    return letters
     
 
 
