@@ -32,14 +32,15 @@ if this does not work, you can try:
 3. Save and exit the file *(if you are using nano you do this by pressing `CTRL-S` followed by `CTRL-X`)*
 
 ## Commands
-* !help - Gives a list of options
-* !potato - Gives a conventional potato response
-* !antitato - Gives a reverse potato response
-* !contradictato - Gives a conventional potato response, followed by the corresponding reverse potato response
-* !spell - Reminds you how to spell "baked potato" 
-* !misspell - Reminds you how to spell something vaguely similar to "baked potato "
-* !link - Sends the link to the video
-* !serioustato - Gives a very serious potato response
+* `!help` - Gives a list of options
+* `!potato` - Gives a conventional potato response
+* `!antitato` - Gives a reverse potato response
+* `!contradictato` - Gives a conventional potato response, followed by the corresponding reverse potato response
+* `!spell` - Reminds you how to spell "baked potato" 
+* `!misspell` - Reminds you how to spell something vaguely similar to "baked potato "
+* `!link` - Sends the link to the video
+* `!serioustato` - Gives a very serious potato response
+* `!cookedtuber` - Chooses a cooking method and a tuber and reminds you how to spell it
 
 ## Requirements
 * Python3
